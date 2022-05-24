@@ -21,6 +21,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install
 - [ ] Run `git clone https://github.com/aliveGUY/aliveGUY.github.io` this will clone repository on your local machine
+- [ ] Run `npm install` this will  install all dependencies
 
 ### Usage
 - [ ] Run `cd Portfolio` now you ready to use repo
