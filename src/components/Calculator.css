@@ -1,0 +1,36 @@
+.wrapper {
+  width: fit-content;
+}
+
+#input {
+  width: calc(100% - 10px);
+  line-height: 30px;
+  border: none;
+  background-color: rgb(104, 104, 104);
+  padding: 5px;
+  color: #fff;
+  text-align: right;
+  font-size: 2vh;
+}
+
+.keyboard-wrapper {
+  width: 100%;
+  background-color: rgb(184, 184, 184);
+}
+
+.keyboard button {
+  aspect-ratio: 3/2;
+  height: 8vh;
+  font-size: 2vh;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.keyboard th:nth-child(4) button {
+  background-color: orange;
+}
+
+.equal {
+  background-color: orange;
+}
