@@ -1,6 +1,21 @@
-import { calculate, type, clear } from './logic/calculate';
+import React, { useState } from 'react';
+import calculate from './logic/calculate';
 
 function Calculator() {
+  const [value, setValue] = useState(0);
+
+  const input = (e) => {
+    const newVal = calculate(value, e.target.innerHTML);
+    setValue(newVal);
+    console.log(newVal);
+    const result = document.getElementById('input');
+    if (newVal.next !== null) {
+      result.value += newVal.next;
+    } else {
+      result.value = newVal.total;
+    }
+  };
+
   return (
     <div className="wrapper">
       <form>
@@ -9,33 +24,33 @@ function Calculator() {
       <table className="keyboard-wrapper">
         <tbody className="keyboard">
           <tr>
-            <th><button type="button" className="AC" onClick={clear}>AC</button></th>
-            <th><button type="button" className="plus-minus">+/-</button></th>
-            <th><button type="button" className="percent" onClick={type}>%</button></th>
-            <th><button type="button" className="divide" onClick={type}>÷</button></th>
+            <th><button type="button" className="AC" onClick={input}>AC</button></th>
+            <th><button type="button" className="plus-minus" onClick={input}>+/-</button></th>
+            <th><button type="button" className="percent" onClick={input}>%</button></th>
+            <th><button type="button" className="divide" onClick={input}>÷</button></th>
           </tr>
           <tr>
-            <th><button type="button" className="one" onClick={type}>1</button></th>
-            <th><button type="button" className="two" onClick={type}>2</button></th>
-            <th><button type="button" className="three" onClick={type}>3</button></th>
-            <th><button type="button" className="multiply" onClick={type}>x</button></th>
+            <th><button type="button" className="one" onClick={input}>1</button></th>
+            <th><button type="button" className="two" onClick={input}>2</button></th>
+            <th><button type="button" className="three" onClick={input}>3</button></th>
+            <th><button type="button" className="multiply" onClick={input}>x</button></th>
           </tr>
           <tr>
-            <th><button type="button" className="four" onClick={type}>4</button></th>
-            <th><button type="button" className="five" onClick={type}>5</button></th>
-            <th><button type="button" className="six" onClick={type}>6</button></th>
-            <th><button type="button" className="minus" onClick={type}>-</button></th>
+            <th><button type="button" className="four" onClick={input}>4</button></th>
+            <th><button type="button" className="five" onClick={input}>5</button></th>
+            <th><button type="button" className="six" onClick={input}>6</button></th>
+            <th><button type="button" className="minus" onClick={input}>-</button></th>
           </tr>
           <tr>
-            <th><button type="button" className="seven" onClick={type}>7</button></th>
-            <th><button type="button" className="eight" onClick={type}>8</button></th>
-            <th><button type="button" className="nine" onClick={type}>9</button></th>
-            <th><button type="button" className="plus" onClick={type}>+</button></th>
+            <th><button type="button" className="seven" onClick={input}>7</button></th>
+            <th><button type="button" className="eight" onClick={input}>8</button></th>
+            <th><button type="button" className="nine" onClick={input}>9</button></th>
+            <th><button type="button" className="plus" onClick={input}>+</button></th>
           </tr>
           <tr>
-            <th colSpan={2}><button type="button" className="zero" onClick={type}>0</button></th>
-            <th><button type="button" className="dot" onClick={type}>.</button></th>
-            <th><button type="button" className="equal" onClick={calculate}>=</button></th>
+            <th colSpan={2}><button type="button" className="zero" onClick={input}>0</button></th>
+            <th><button type="button" className="dot" onClick={input}>.</button></th>
+            <th><button type="button" className="equal" onClick={input}>=</button></th>
           </tr>
         </tbody>
       </table>
