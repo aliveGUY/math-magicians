@@ -1,6 +1,6 @@
 import operate from './operate';
 
-function isNumber(item) {
+export function isNumber(item) {
   return !!item.match(/[0-9]+/);
 }
 
@@ -13,7 +13,7 @@ function isNumber(item) {
  *   next:String       the next number to be operated on with the total
  *   operation:String  +, -, etc.
  */
-export default function calculate(obj, buttonName) {
+export function calculate(obj, buttonName) {
   if (buttonName === 'AC') {
     return {
       total: '0',
