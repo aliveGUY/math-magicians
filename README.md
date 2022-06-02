@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> Calculator and more
+> Calculator app and more
 
 
 ## Built With
