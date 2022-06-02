@@ -1,0 +1,241 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Working with snapshots render Home 1`] = `
+<div
+  className="home"
+>
+  <h3>
+    Welcome to our page!
+  </h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima, maxime repudiandae quo possimusv oluptatum natus, voluptates quae, qui pariatur itaque perspici atisdolores iusto? Soluta asperiores aperiam possimus iste id.
+  </p>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione minima, maxime repudiandae quo possimu svoluptatum natus, voluptates quae, qui pariatur itaque perspiciat isdolores iusto? Soluta asperiores aperiam possimus iste id perspicia tisdolores iusto? Soluta asperiores.
+  </p>
+</div>
+`;
+
+exports[`Working with snapshots render Home 2`] = `
+<div
+  className="calculator-wrapper"
+>
+  <h2
+    className="calculator-title"
+  >
+    Lets do some Math!
+  </h2>
+  <div
+    className="calculator"
+  >
+    <form>
+      <input
+        id="input"
+        name="input"
+        type="text"
+      />
+    </form>
+    <table
+      className="keyboard-wrapper"
+    >
+      <tbody
+        className="keyboard"
+      >
+        <tr>
+          <th>
+            <button
+              className="AC"
+              onClick={[Function]}
+              type="button"
+            >
+              AC
+            </button>
+          </th>
+          <th>
+            <button
+              className="plus-minus"
+              onClick={[Function]}
+              type="button"
+            >
+              +/-
+            </button>
+          </th>
+          <th>
+            <button
+              className="percent"
+              onClick={[Function]}
+              type="button"
+            >
+              %
+            </button>
+          </th>
+          <th>
+            <button
+              className="divide"
+              onClick={[Function]}
+              type="button"
+            >
+              ÷
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button
+              className="one"
+              onClick={[Function]}
+              type="button"
+            >
+              1
+            </button>
+          </th>
+          <th>
+            <button
+              className="two"
+              onClick={[Function]}
+              type="button"
+            >
+              2
+            </button>
+          </th>
+          <th>
+            <button
+              className="three"
+              onClick={[Function]}
+              type="button"
+            >
+              3
+            </button>
+          </th>
+          <th>
+            <button
+              className="multiply"
+              onClick={[Function]}
+              type="button"
+            >
+              x
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button
+              className="four"
+              onClick={[Function]}
+              type="button"
+            >
+              4
+            </button>
+          </th>
+          <th>
+            <button
+              className="five"
+              onClick={[Function]}
+              type="button"
+            >
+              5
+            </button>
+          </th>
+          <th>
+            <button
+              className="six"
+              onClick={[Function]}
+              type="button"
+            >
+              6
+            </button>
+          </th>
+          <th>
+            <button
+              className="minus"
+              onClick={[Function]}
+              type="button"
+            >
+              -
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <button
+              className="seven"
+              onClick={[Function]}
+              type="button"
+            >
+              7
+            </button>
+          </th>
+          <th>
+            <button
+              className="eight"
+              onClick={[Function]}
+              type="button"
+            >
+              8
+            </button>
+          </th>
+          <th>
+            <button
+              className="nine"
+              onClick={[Function]}
+              type="button"
+            >
+              9
+            </button>
+          </th>
+          <th>
+            <button
+              className="plus"
+              onClick={[Function]}
+              type="button"
+            >
+              +
+            </button>
+          </th>
+        </tr>
+        <tr>
+          <th
+            colSpan={2}
+          >
+            <button
+              className="zero"
+              onClick={[Function]}
+              type="button"
+            >
+              0
+            </button>
+          </th>
+          <th>
+            <button
+              className="dot"
+              onClick={[Function]}
+              type="button"
+            >
+              .
+            </button>
+          </th>
+          <th>
+            <button
+              className="equal"
+              onClick={[Function]}
+              type="button"
+            >
+              =
+            </button>
+          </th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+`;
+
+exports[`Working with snapshots render Home 3`] = `
+<div>
+  <p
+    className="quote"
+  >
+    Mathematics is not about numbers, equations, computations, or algorithms: it is about understanding. -Willia paul Thurston
+  </p>
+</div>
+`;

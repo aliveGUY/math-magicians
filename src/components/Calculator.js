@@ -9,7 +9,7 @@ function Calculator() {
     setValue(newVal);
     const result = document.getElementById('input');
     if (newVal.next !== null) {
-      result.value += newVal.next;
+      result.value = newVal.next;
     } else {
       result.value = newVal.total;
     }
