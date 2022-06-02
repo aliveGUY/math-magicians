@@ -16,4 +16,8 @@ describe('Operate', () => {
   test('divide', () => {
     expect(operate(1, 1, '÷')).toBe('1');
   });
+
+  test('percent', () => {
+    expect(operate(1, 1, '%')).toBe('0');
+  });
 });

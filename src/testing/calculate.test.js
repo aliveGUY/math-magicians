@@ -40,4 +40,14 @@ describe('Calculate', () => {
     const a = calculate(operation, operation.operation);
     expect(a.total).toBe('1');
   });
+
+  test('percent', () => {
+    const operation = {
+      total: '1',
+      next: '1',
+      operation: '%',
+    };
+    const a = calculate(operation, operation.operation);
+    expect(a.total).toBe('0');
+  });
 });
